@@ -1,0 +1,30 @@
+# Binaries
+/bin/
+/build/
+*.exe
+*.test
+*.out
+
+# Go
+vendor/
+.go/
+
+# Env
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage.out
+coverage.html
+
+# Air (hot reload, если кто-то запускает локально)
+tmp/

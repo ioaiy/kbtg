@@ -1,0 +1,37 @@
+# Secrets — самое важное, чтобы не попало в build context.
+.env
+.env.*
+!.env.example
+
+# VCS
+.git
+.gitignore
+.gitattributes
+
+# IDE / OS
+.idea
+.vscode
+*.swp
+.DS_Store
+Thumbs.db
+
+# Build artefacts
+bin/
+build/
+tmp/
+*.exe
+*.test
+*.out
+coverage.out
+coverage.html
+
+# Docs / spec — не нужны в образе
+README.md
+SPEC.md
+deployments/
+
+# Test caches
+.go/
+
+# Опционально: docs/ перегенерируется в CI/локально через make swag,
+# но в образе нужен закоммиченный stub для go build.
